@@ -173,7 +173,7 @@ Cuối cùng, bot gửi lại câu trả lời dưới dạng văn bản (hoặc
 *Quy trình này nghe có vẻ dài dòng nhưng thực tế nó diễn ra chỉ trong vài giây. Tất cả đều được xử lý tự động để mang lại cho bạn cảm giác như đang trò chuyện với một người bạn thực sự chứ không phải một cỗ máy vô tri.*
 
 
-# Phần 4: Các công nghệ chính trong AI Chatbot
+# 4. Các công nghệ chính trong AI Chatbot
 Khác với rule-based chatbot, AI Chatbot sử dụng các công nghệ tiên tiến về AI để tối ưu độ chính xác và mức độ trả lời tự nhiên của chatbot, đồng thời có thể trả lời nhiều câu hỏi của người dùng dựa trên ngữ cảnh.
 
 **1. NLP - Natural Language Processing (Xử lí ngôn ngữ tự nhiên):**
@@ -207,7 +207,7 @@ Bên cạnh các công nghệ trên, hiện nay Generative AI (AI tạo sinh) c�
 
 Ngoài khả năng trả lời câu hỏi của người dùng, AI chatbot còn có khả năng học thêm dựa trên các câu trả lời hiện tại của người dùng. Các dữ liệu liên tục được cập nhật dựa trên đoạn hội thoại của người dùng hiện tại và cả những người dùng khác cùng chủ đề để tối ưu và mở rộng kiến thức của chatbot, từ đó chatbot trở nên thông minh hơn theo thời gian.
 
-# Phần 5: Các ví dụ so sánh (Comparative Examples)
+# 5. Các ví dụ so sánh (Comparative Examples)
 
 **5.1. Chatbot và trợ lý con người: giống và khác nhau ở đâu?**
 
@@ -316,4 +316,5 @@ Zhang, Y., Sun, S., Galley, M., Chen, Y.-C., Brockett, C., Gao, X., … Dolan, B
 
 
 https://www.geeksforgeeks.org/nlp/what-is-natural-language-processing-nlp-chatbots/
+
 
