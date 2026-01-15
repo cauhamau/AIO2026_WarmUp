@@ -174,6 +174,7 @@ Cuối cùng, bot gửi lại câu trả lời dưới dạng văn bản (hoặc
 
 
 # 4. Các công nghệ chính trong AI Chatbot
+
 Khác với rule-based chatbot, AI Chatbot sử dụng các công nghệ tiên tiến về AI để tối ưu độ chính xác và mức độ trả lời tự nhiên của chatbot, đồng thời có thể trả lời nhiều câu hỏi của người dùng dựa trên ngữ cảnh.
 
 **1. NLP - Natural Language Processing (Xử lí ngôn ngữ tự nhiên):**
@@ -185,11 +186,26 @@ Các kĩ thuật chính của NLP trong AI Chatbot:
 Ví dụ:
 "Book a flight tomorrow" → ["Book", "a", "flight", "tomorrow"]
 
+<p align="center">
+  <img src="images\part4_NER.png" alt="Quy trình chat" width="600"><br/>
+  <em>Hình 4.1. Tokenization</em>
+</p>
+
 - Named Entity Recognition — NER: Nhận dạng thực thể. Nhận dạng các cụm từ trong văn bản và phân loại chúng vào trong các nhóm đã được định trước như tên người, tổ chức, địa điểm, thời gian, loại sản phẩm, nhãn hiệu. Trong AI based chatbot, NER giúp phân loại các từ ngữ định danh đặc biệt cho ngữ cảnh, các câu trả lời sẽ xoay quanh các thực thể này.
 Ví dụ:
 "What's the weather in **Chicago** tomorrow?" → **Chicago** là thực thể chính về địa điểm để chatbot đưa ra câu trả lời về thời tiết.
 
+<p align="center">
+  <img src="images\part4_NER.png.png" alt="Quy trình chat" width="600"><br/>
+  <em>Hình 4.2. NER - Named Entity Recognition</em>
+</p>
+
 - Sentiment Analysis: Phân tích cảm xúc. Đóng vai trò nhận diện cảm xúc của người dùng trong đoạn hội thoại, từ đó đưa ra câu trả lời với ngôn từ phù hợp, tránh phật ý người dùng. Kĩ thuật này giúp cho AI Chatbot trả lời được tự nhiên, "cảm xúc" hơn và tăng trải nghiệm của người dùng chatbot.
+
+<p align="center">
+  <img src="images\part4_sentiment_analysis.png" alt="Quy trình chat" width="600"><br/>
+  <em>Hình 4.3. Sentiment Analysis</em>
+</p>
 
 **2. Mô hình AI / Machine Learning / LLM:**
 
@@ -200,6 +216,11 @@ Machine Learning: Các thuật toán học máy đào tạo chatbot cách xử l
 Deep Learning: Các thuật toán học sâu giúp bổ trợ và đào tạo sâu hơn cho chatbot, từ đó chatbot có thể nhận diện các ý nghĩa sâu hơn trong đoạn hội thoại và đưa ra câu trả lời tốt hơn.
 
 LLM: Mô hình ngôn ngữ lớn chứa lượng dữ liệu khổng lồ về ngôn ngữ như ngữ pháp, chính tả, các ngôn ngữ khác nhau. Mô hình này được dùng trong khâu đào tạo chatbot như một phương pháp để đào tạo chatbot, giúp chatbot phân tích chính xác hội thoại với người dùng cũng như đưa ra câu trả lời tự nhiên hơn.
+
+<p align="center">
+  <img src="images\part4_ML_DL_LLM_GenAI.png" alt="Quy trình chat" width="600"><br/>
+  <em>Hình 4.4. Các công nghệ dùng để đào tạo AI Chatbot</em>
+</p>
 
 Bên cạnh các công nghệ trên, hiện nay Generative AI (AI tạo sinh) cũng đang được ứng dụng vào quá trình huấn luyện chatbot để cải thiện hiệu năng. AI tạo sinh biến chatbot từ công cụ Q&A thành một AI Agent, giúp đoạn hội thoại trở thành như cuộc trò chuyện tư vấn giữa người với người. Các câu trả lời sẽ không còn khuôn mẫu mà trở nên đa dạng hơn, chatbot có thể tự suy luận đưa ra các tư vấn ngoài những dữ liệu được đào tạo nhưng vẫn theo sát nội dung của cuộc trò chuyện.
 
@@ -316,5 +337,6 @@ Zhang, Y., Sun, S., Galley, M., Chen, Y.-C., Brockett, C., Gao, X., … Dolan, B
 
 
 https://www.geeksforgeeks.org/nlp/what-is-natural-language-processing-nlp-chatbots/
+
 
 
