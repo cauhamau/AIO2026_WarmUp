@@ -1,3 +1,5 @@
+*Summary: This blog explains what AI chatbots are and how they work in real life. By walking through each step of a conversation and introducing key technologies such as natural language processing and AI models, it gives a clear and easy-to-understand view of why chatbots are becoming more popular and useful in everyday life.*
+
 # 1. Mở đầu: Chatbot là gì?
 
 Hẳn bạn đã từng nhắn tin hỏi thông tin trên website một công ty nào đó, và ngay lập tức nhận được câu trả lời như thể đang chat với một nhân viên tư vấn thật sự. Hoặc đơn giản hơn, bạn đã thử hỏi Siri "Hôm nay thời tiết thế nào?" hay nhờ Google Assistant đặt báo thức. Đó chính là chatbot - một chương trình máy tính được thiết kế để trò chuyện với con người thông qua văn bản hoặc giọng nói, gần giống như cách bạn trò chuyện với một người thật.
@@ -10,7 +12,7 @@ Trong bài viết này, chúng tôi sẽ đưa bạn đi từ những khái ni�
 ## 1.2. Hãy cùng phân biệt hai "thế hệ" chatbot:
 <p align="center">
   <img src="https://aioconquer.aivietnam.edu.vn/static/uploads/20260116_095833_3e05dc57.png" style="margin: 0 auto; display: block;"><br/>
-  <em>Hình 1.1. Hai thế hệ chatbot</em>
+  <em>Figure 1.1. Hai thế hệ chatbot</em>
 </p>
 
 ### a. Rule-based Chatbot (Chatbot dựa trên quy tắc)
@@ -78,7 +80,7 @@ AI chatbot có thể phân tích lịch sử tương tác, sở thích của ng�
 AI chatbot đã và đang xuất hiện ở khắp mọi nơi:
 <p align="center">
   <img src="images\chatbot_usecase_mindmap.png" style="margin: 0 auto; display: block;"><br/>
-  <em>Hình 2.1. Các ứng dụng thực tế của AI chatbot</em>
+  <em>Figure 2.1. Các ứng dụng thực tế của AI chatbot</em>
 </p>
 
 **Dịch vụ khách hàng:**
@@ -102,73 +104,78 @@ AI chatbot đã và đang xuất hiện ở khắp mọi nơi:
 - ChatGPT, Claude: Trợ lý viết lách, lập trình, brainstorming ý tưởng
 - Siri, Google Assistant: Điều khiển thiết bị thông minh, đặt lịch hẹn
 
-# 3. Quy trình một lượt chat diễn ra như thế nào?
+# 3. How does a single conversation work?
 
-Bạn từng tự hỏi: Từ lúc bạn nhấn Enter đến khi chatbot trả lời chỉ tốn vài giây, điều gì đã xảy ra?
+Have you ever wondered what actually happens in the few seconds between pressing Enter and receiving a reply from a chatbot?
 
-**Cơ chế hoạt động của AI chatbot (NLP)**<br/>
-Cách hoạt động của các chatbot sử dụng NLP (Natural Language Processing) thực chất bao gồm một chuỗi các bước khá logic để hiểu và trả lời người dùng một cách tự nhiên. Mình giải thích ngắn gọn, đơn giản như sau:
+**How AI Chatbots Work (NLP)**<br/>
+In reality, chatbots powered by NLP (Natural Language Processing) follow a logical sequence of steps to understand user input and generate natural responses. Below is a simple and easy-to-understand explanation of this process.
 
 <p align="center">
-  <img src="images/AI_chatbot_WorkFlow.svg" style="margin: 0 auto; display: block;"><br/>
-  <em>Hình 3.1. Quy trình xử lý một lượt chat của AI chatbot sử dụng NLP</em>
+  <img src="images/AI_chatbot_WorkFlow_eng.svg" style="margin: 0 auto; display: block;"><br/>
+  <em>Figure 3.1. Processing workflow of an NLP-based AI chatbot</em>
 </p>
 
-**1. Xử lý đầu vào** (Input Processing)
+**1. Input Processing**
 
-Khi bạn gửi tin nhắn, chatbot sẽ phân tích đoạn văn: tách thành từng từ (tokenization), xác định loại từ (danh từ, động từ…), và nhận diện các thông tin quan trọng như tên người, ngày tháng, địa điểm… Nói đơn giản là bước “đọc và hiểu sơ bộ” nội dung bạn vừa nhập.
+When a user sends a message or query to the chatbot, the input is first processed to extract relevant information. This involves tasks such as tokenization (breaking the text into words or tokens), part-of-speech tagging (identifying the grammatical components of each word), and named entity recognition (identifying important entities such as names, dates, and locations).
+
 <p align="center">
   <img src="images\input_processing.png" style="margin: 0 auto; display: block;"><br/>
-  <em>Hình 3.2. Xử lý đầu vào (Input Processing)</em>
+  <em>Figure 3.2. Input Processing</em>
 </p>
 
-**2. Nhận diện ý định (Intent Recognition)**
+**2. Intent Recognition**
 
-Sau khi phân tích, chatbot xác định mục đích chính của bạn: bạn đang hỏi thông tin, yêu cầu làm gì đó, phản hồi, hay chỉ trò chuyện thôi? Bước này thường dùng mô hình phân loại để gán một nhãn ý định (intent). Nhờ vậy bot biết nên tra dữ liệu, gọi API, hay sinh câu trả lời tự nhiên.
+After processing the input, the chatbot identifies the user's intent or the purpose behind the message. This involves understanding what the user wants to accomplish, such as asking a question, making a request, or providing feedback.
+
 <p align="center">
   <img src="images\intent_recognition.png" style="margin: 0 auto; display: block;"><br/>
-  <em>Hình 3.3. Nhận diện ý định (Intent Recognition)</em>
+  <em>Figure 3.3. Intent Recognition</em>
 </p>
 
-**3. Quản lý hội thoại (Dialogue Management)**
+**3. Dialogue Management**
 
-Ở bước này, hệ thống quyết định “mạch" hội thoại:
+At this stage, the system decides how the conversation should proceed:
 
-- Dùng ngữ cảnh trước đó (những gì đã nói trong cuộc chat) để giữ câu trả lời liên tục, hợp lý.
-- Chọn hành động tiếp theo: trả lời trực tiếp, gọi API (ví dụ tra lịch bay), cập nhật trạng thái, hay hỏi - thêm.
-- Hệ thống quản lý giống như người điều phối cuộc trò chuyện để không bị lạc đề hoặc quên thông tin quan trọng.
+- It uses previous context from the conversation to maintain coherence and continuity.
+- It determines the next action, such as replying directly, calling an external service (e.g., checking flight schedules), updating conversation state, or asking follow-up questions.
+- The dialogue manager acts like a coordinator, ensuring the conversation stays on topic and important information is not forgotten.
 
-**4. Tạo câu trả lời (Response Generation)**
+**4. Response Generation**
 
-Dựa trên ý định và ngữ cảnh, bot sẽ:<br/>
-- Tìm thông tin từ cơ sở dữ liệu
-- Thực hiện một hành động nào đó (như tra cứu, đặt lệnh)
-- Hoặc tự tạo câu trả lời tự nhiên bằng các kỹ thuật sinh ngôn ngữ (natural language generation).
+Based on the identified intent and conversation context, the chatbot will:
+
+- Retrieve information from a database or knowledge base
+- Execute a specific action (such as searching or issuing a command)
+- Or generate a natural language response using text generation and natural language generation techniques
+
 <p align="center">
   <img src="images\dialogue_management.png" style="margin: 0 auto; display: block;"><br/>
-  <em>Hình 3.4. Quản lý hội thoại và sinh câu trả lời</em>
+  <em>Figure 3.4. Dialogue Management and Response Generation</em>
 </p>
 
-**5. Học hỏi và cải thiện**
+**5. Learning and Improvement**
 
-Không chỉ trả lời rồi thôi, chatbot còn có khả năng học từ các cuộc trò chuyện trước đó.
-Thông qua dữ liệu tương tác, phản hồi của người dùng và các lần sửa lỗi, hệ thống dần cải thiện khả năng hiểu ngôn ngữ, nhận diện ý định chính xác hơn và đưa ra câu trả lời phù hợp hơn theo thời gian.
+Modern chatbots do more than just respond to messages. They continuously learn from previous conversations, user interactions, feedback, and error corrections.
 
-Nhờ cơ chế này, chatbot càng được sử dụng nhiều thì càng “thông minh” và linh hoạt hơn.
+Through machine learning mechanisms, the system gradually improves its language understanding, intent recognition accuracy, and response quality over time. As a result, the more a chatbot is used, the smarter and more adaptable it becomes.
+
 <p align="center">
   <img src="images\feedback.png" style="margin: 0 auto; display: block;"><br/>
-  <em>Hình 3.5. Chatbot học hỏi và tối ưu dựa trên phản hồi người dùng</em>
+  <em>Figure 3.5.Chatbot learning and optimization based on user feedback</em>
 </p>
 
-**6. Trả lời người dùng**
+**6. Responding to the User**
 
-Cuối cùng, bot gửi lại câu trả lời dưới dạng văn bản (hoặc giọng nói), sao cho dễ đọc và thân thiện nhất có thể.
+*Finally, the chatbot delivers the response back to the user in a human-readable format, such as text or speech. The response is designed to be clear, natural, and user-friendly.*
+
 <p align="center">
   <img src="images\chat-ui.gif" style="margin: 0 auto; display: block;"><br/>
-  <em>Hình 3.6. Chatbot phản hồi sao cho dễ đọc và thân thiện nhất với người dùng</em>
+  <em>Figure 3.6. Chatbot response presented in a user-friendly manner</em>
 </p>
 
-*Quy trình này nghe có vẻ dài dòng nhưng thực tế nó diễn ra chỉ trong vài giây. Tất cả đều được xử lý tự động để mang lại cho bạn cảm giác như đang trò chuyện với một người bạn thực sự chứ không phải một cỗ máy vô tri.*
+*Although this process may seem complex, it actually happens within just a few seconds. All steps are executed automatically to create the feeling that you are conversing with a real assistant, rather than an emotionless machine.*
 
 # 4. Main technologies in AI chatbot
 
@@ -184,7 +191,7 @@ Example: "Book a flight tomorrow" → ["Book", "a", "flight", "tomorrow"]
 
 <p align="center">
   <img src="images\part4_tokenization.png" style="margin: 0 auto; display: block;"><br/>
-  <em>Hình 4.1. Tokenization</em>
+  <em>Figure 4.1. Tokenization</em>
 </p>
 
 - Named Entity Recognition — NER: Recognize words, subwords in context and classifies them into groups such as human name, organization, location, time, product to help chatbots respond based on these entities.
@@ -192,14 +199,14 @@ Example: "What's the weather in Chicago tomorrow?" → Chicago is the entity to 
 
 <p align="center">
   <img src="images\part4_NER.png" style="margin: 0 auto; display: block;"><br/>
-  <em>Hình 4.2. NER - Named Entity Recognition</em>
+  <em>Figure 4.2. NER - Named Entity Recognition</em>
 </p>
 
 - Sentiment analysis: Identify and quantify opinions, emotions, and attitudes in text, speech, classifying them as positive, negative, or neutral to understand subjective information. It helps chatbots respond with a more pleasing, emotional tone to users.
 
 <p align="center">
   <img src="images\part4_sentiment_analysis.png" style="margin: 0 auto; display: block;"><br/>
-  <em>Hình 4.3. Sentiment Analysis</em>
+  <em>Figure 4.3. Sentiment Analysis</em>
 </p>
 
 **4.2. AI models / Machine Learning / LLM:**
@@ -214,7 +221,7 @@ Large Language Models (LLMs): are trained on massive amounts of linguistic data,
 
 <p align="center">
   <img src="images\part4_ML_DL_LLM_GenAI.png" style="margin: 0 auto; display: block;"><br/>
-  <em>Hình 4.4. Technologies uses to train AI chatbot</em>
+  <em>Figure 4.4. Technologies uses to train AI chatbot</em>
 </p>
 
 In addition to the technologies mentioned above, Generative AI is now being used in chatbot training to improve performance. Generative AI turns chatbots from basic question-and-answer tools into AI agents, making conversations feel more like real human consultations. Instead of giving fixed or repetitive answers, chatbots can provide more flexible responses and reason to offer suggestions beyond their training data, while still staying relevant to the context of the conversation.
