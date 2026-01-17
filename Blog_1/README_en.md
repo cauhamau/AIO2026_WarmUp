@@ -170,60 +170,58 @@ Cuối cùng, bot gửi lại câu trả lời dưới dạng văn bản (hoặc
 
 *Quy trình này nghe có vẻ dài dòng nhưng thực tế nó diễn ra chỉ trong vài giây. Tất cả đều được xử lý tự động để mang lại cho bạn cảm giác như đang trò chuyện với một người bạn thực sự chứ không phải một cỗ máy vô tri.*
 
-# 4. Các công nghệ chính trong AI chatbot
+# 4. Main technologies in AI chatbot
 
-Khác với rule-based chatbot, AI chatbot sử dụng các công nghệ tiên tiến về AI để tối ưu độ chính xác và mức độ trả lời tự nhiên của chatbot, đồng thời có thể trả lời nhiều câu hỏi của người dùng dựa trên ngữ cảnh.
+Unlike their rule-based counterparts, AI chatbots use advanced technologies in AI to not only optimize its accuracy but also how natural it sounds when answering user questions. It also enables the chatbots to respond based on different context.
 
-**1. NLP - Natural Language Processing (Xử lí ngôn ngữ tự nhiên):**
+**4.1. NLP - Natural Language Processing:**
 
-Xử lí ngôn ngữ tự nhiên là công nghệ giúp AI nhận diện được ngôn ngữ, kí tự, hiểu được ngữ pháp, ngữ cảnh của một đoạn văn, câu nói hoặc một đoạn hội thoại. Với NLP, chatbot có thể đưa ra phản hồi tự nhiên, hiệu quả và phù hợp với ngữ cảnh của người đặt câu hỏi, cung cấp thêm thông tin bao quát, chính xác theo nhu cầu người dùng.
+Natural Language Processing (NLP) allows AI systems to identify language and characters and to interpret grammar, context in text, speech, or conversations. By applying NLP, chatbots can effectively provide natural and comprehensively responses based on user’s context, unlocking more general and accurate information to user.
 
-Các kĩ thuật chính của NLP trong AI chatbot:
-- Tokenization: Phân tách một văn bản thành các kí tự, từ ngữ, các câu riêng biệt có thể hiểu được. Giúp tìm ra các keyword chính để xử lí, phân tích, hiểu ngữ nghĩa của con người để đưa ra các câu trả lời phù hợp tới chủ đề chính.
-Ví dụ:
-"Book a flight tomorrow" → ["Book", "a", "flight", "tomorrow"]
+Key technologies of NLP using in AI chatbots:
+Tokenization: Break down raw text into smaller units, which can be words, subwords, characters, or sentences, to make unstructured text understandable for machines. It helps to the keywords to process, analyze and understand human language to respond appropriately.
+Example: "Book a flight tomorrow" → ["Book", "a", "flight", "tomorrow"]
 
 <p align="center">
   <img src="images\part4_tokenization.png" style="margin: 0 auto; display: block;"><br/>
   <em>Hình 4.1. Tokenization</em>
 </p>
 
-- Named Entity Recognition — NER: Nhận dạng thực thể. Nhận dạng các cụm từ trong văn bản và phân loại chúng vào trong các nhóm đã được định trước như tên người, tổ chức, địa điểm, thời gian, loại sản phẩm, nhãn hiệu. Trong AI based chatbot, NER giúp phân loại các từ ngữ định danh đặc biệt cho ngữ cảnh, các câu trả lời sẽ xoay quanh các thực thể này.
-Ví dụ:
-"What's the weather in **Chicago** tomorrow?" → **Chicago** là thực thể chính về địa điểm để chatbot đưa ra câu trả lời về thời tiết.
+- Named Entity Recognition — NER: Recognize words, subwords in context and classifies them into groups such as human name, organization, location, time, product to help chatbots respond based on these entities.
+Example: "What's the weather in Chicago tomorrow?" → Chicago is the entity to describe the location for chatbots to answer question about weather.
 
 <p align="center">
   <img src="images\part4_NER.png" style="margin: 0 auto; display: block;"><br/>
   <em>Hình 4.2. NER - Named Entity Recognition</em>
 </p>
 
-- Sentiment Analysis: Phân tích cảm xúc. Đóng vai trò nhận diện cảm xúc của người dùng trong đoạn hội thoại, từ đó đưa ra câu trả lời với ngôn từ phù hợp, tránh phật ý người dùng. Kĩ thuật này giúp cho AI chatbot trả lời được tự nhiên, "cảm xúc" hơn và tăng trải nghiệm của người dùng chatbot.
+- Sentiment analysis: Identify and quantify opinions, emotions, and attitudes in text, speech, classifying them as positive, negative, or neutral to understand subjective information. It helps chatbots respond with a more pleasing, emotional tone to users.
 
 <p align="center">
   <img src="images\part4_sentiment_analysis.png" style="margin: 0 auto; display: block;"><br/>
   <em>Hình 4.3. Sentiment Analysis</em>
 </p>
 
-**2. Mô hình AI / Machine Learning / LLM:**
+**2. AI models / Machine Learning / LLM:**
 
-Những công nghệ này là bộ não của AI chatbot, các dữ liệu được đào tạo, cường hóa và cải thiện để giúp chatbot đưa ra các câu trả lời đa dạng hơn.
+These technologies are the brain of AI chatbot, the data is trained, reinforced to help optimize the chatbot responses.
 
-Machine Learning: Các thuật toán học máy đào tạo chatbot cách xử lí và trả lời các câu hỏi của người dùng, dựa trên dữ liệu đã có sẵn
+Machine Learning: Machine Learning algorithms helps train the chatbot how to process and respond to user based on predefined data.
 
-Deep Learning: Các thuật toán học sâu giúp bổ trợ và đào tạo sâu hơn cho chatbot, từ đó chatbot có thể nhận diện các ý nghĩa sâu hơn trong đoạn hội thoại và đưa ra câu trả lời tốt hơn.
+Deep Learning: Allow chatbots to continuously learn from interactions, improving their ability to handle complex conversations
 
-LLM: Mô hình ngôn ngữ lớn chứa lượng dữ liệu khổng lồ về ngôn ngữ như ngữ pháp, chính tả, các ngôn ngữ khác nhau. Mô hình này được dùng trong khâu đào tạo chatbot như một phương pháp để đào tạo chatbot, giúp chatbot phân tích chính xác hội thoại với người dùng cũng như đưa ra câu trả lời tự nhiên hơn.
+Large Language Models (LLMs): are trained on massive amounts of linguistic data, including grammar, spelling, and multiple languages. These models are used in chatbot training as a core approach to enable chatbots to accurately analyze user conversations and generate more natural and human-like responses.
 
 <p align="center">
   <img src="images\part4_ML_DL_LLM_GenAI.png" style="margin: 0 auto; display: block;"><br/>
-  <em>Hình 4.4. Các công nghệ dùng để đào tạo AI chatbot</em>
+  <em>Hình 4.4. Technologies uses to train AI chatbot</em>
 </p>
 
-Bên cạnh các công nghệ trên, hiện nay Generative AI (AI tạo sinh) cũng đang được ứng dụng vào quá trình huấn luyện chatbot để cải thiện hiệu năng. AI tạo sinh biến chatbot từ công cụ Q&A thành một AI Agent, giúp đoạn hội thoại trở thành như cuộc trò chuyện tư vấn giữa người với người. Các câu trả lời sẽ không còn khuôn mẫu mà trở nên đa dạng hơn, chatbot có thể tự suy luận đưa ra các tư vấn ngoài những dữ liệu được đào tạo nhưng vẫn theo sát nội dung của cuộc trò chuyện.
+In addition to the technologies mentioned above, Generative AI is now being used in chatbot training to improve performance. Generative AI turns chatbots from basic question-and-answer tools into AI agents, making conversations feel more like real human consultations. Instead of giving fixed or repetitive answers, chatbots can provide more flexible responses and reason to offer suggestions beyond their training data, while still staying relevant to the context of the conversation.
 
-**3. Phản hồi và học tiếp:**
+**3. Feedback and Continuous Learning:**
 
-Ngoài khả năng trả lời câu hỏi của người dùng, AI chatbot còn có khả năng học thêm dựa trên các câu trả lời hiện tại của người dùng. Các dữ liệu liên tục được cập nhật dựa trên đoạn hội thoại của người dùng hiện tại và cả những người dùng khác cùng chủ đề để tối ưu và mở rộng kiến thức của chatbot, từ đó chatbot trở nên thông minh hơn theo thời gian.
+In addition to answering user questions, AI chatbots can continue learning based on users’ current responses. Data is continuously updated from ongoing conversations with both the current user and other users on the same topics, allowing the chatbot to optimize and expand its knowledge. As a result, the chatbot becomes smarter over time.
 
 # 5. Các ví dụ so sánh 
 
