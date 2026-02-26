@@ -319,7 +319,7 @@ Tuy nhiên có một lưu ý: Conversational bot khó làm tốt hơn các loạ
 
 ![conservational bot](https://github.com/user-attachments/assets/9f5f7a38-1b2f-4e81-9f45-819263d6f07c)
 <p align="center">
-  <img src="https://aioconquer.aivietnam.edu.vn//static/uploads/20260123_153349_1ce0facd.webp" style="margin: 0 auto; display: block;"><br/>
+  <img src="images/conservational_bot.webp" style="margin: 0 auto; display: block;"><br/>
   <em>Hình 4.3. Conversational Bot</em>
 </p>
 
@@ -337,7 +337,7 @@ Chatbot được thiết kế cho một lĩnh vực nhất định như:
 - Sai sót có thể gây hậu quả lớn
 
 <p align="center">
-  <img src="https://aioconquer.aivietnam.edu.vn//static/uploads/20260123_155702_32fc2bbb.jpeg" style="margin: 0 auto; display: block;"><br/>
+  <img src="https://aioconquer.aivietnam.edu.vn/static/uploads/20260123_155702_32fc2bbb.jpeg" style="margin: 0 auto; display: block;"><br/>
   <em>Hình 4.4. Domain-specific Bot</em>
 </p>
 
